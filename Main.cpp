@@ -100,7 +100,7 @@ int main()
     // load and generate the texture
     
     int width, height, nrChannels;
-    unsigned char* data = stbi_load("ohh.jpg", &width, &height, &nrChannels, 0);
+    unsigned char* data = stbi_load("container.jpg", &width, &height, &nrChannels, 0);
     
     if (data)
     {
