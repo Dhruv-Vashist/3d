@@ -53,10 +53,10 @@ int main()
     // ------------------------------------------------------------------
     float vertices[] = {
         // positions          // texture coords
-         0.5f,  0.5f, 0.0f,   1.0f, 1.0f, // top right
-         0.5f, -0.5f, 0.0f,   1.0f, 0.0f, // bottom right
-        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, // bottom left
-        -0.5f,  0.5f, 0.0f,   0.0f, 1.0f  // top left 
+         1.0f,  1.0f, 0.0f,   2.0f, 2.0f, // top right
+         1.0f, -1.0f, 0.0f,   2.0f, 0.0f, // bottom right
+        -1.0f, -1.0f, 0.0f,   0.0f, 0.0f, // bottom left
+        -1.0f,  1.0f, 0.0f,   0.0f, 2.0f  // top left 
     };
 
     unsigned int indices[] = {
@@ -100,7 +100,7 @@ int main()
     // load and generate the texture
     
     int width, height, nrChannels;
-    unsigned char* data = stbi_load("wall.jpg", &width, &height, &nrChannels, 0);
+    unsigned char* data = stbi_load("hmm.jpg", &width, &height, &nrChannels, 0);
     
     if (data)
     {
@@ -121,7 +121,7 @@ int main()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-    data = stbi_load("hmm.png", &width, &height, &nrChannels, 0);
+    data = stbi_load("heart.png", &width, &height, &nrChannels, 0);
     
     if (data)
     {
@@ -160,8 +160,8 @@ int main()
         glBindTexture(GL_TEXTURE_2D, texture2);
 
         glm::mat4 transform = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
-        transform = glm::translate(transform, glm::vec3(0.5f, -0.5f, 0.0f));
-        transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+        transform = glm::translate(transform, glm::vec3(0.0f, 0.0f, 0.0f));
+        transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(1.0f, 0.5f, 1.0f));
 
         // render container
         ourShader.use();
