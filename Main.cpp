@@ -343,4 +343,7 @@ unsigned int loadTexture(char const* path)
 
     return textureID;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6270806930d0aa4267f3faf79c4debaa6be41d57
