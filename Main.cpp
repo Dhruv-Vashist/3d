@@ -77,7 +77,7 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader ourShader("1.model_loading.vs", "1.model_loading.fs");
+    Shader ourShader("basic.vs", "basic.frag");
 
     // load models
     // -----------
