@@ -81,7 +81,7 @@ int main()
 
     // load models
     // -----------
-    Model ourModel("backpack/backpack.obj");
+    Model ourModel("doomslayer_toy_LOD0/doom.obj");
 
 
     // draw in wireframe
