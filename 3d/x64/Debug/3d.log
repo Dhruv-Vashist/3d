@@ -1,6 +1,2 @@
 ﻿  Main.cpp
-C:\3d renderer\3d\Main.cpp(146,53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\3d renderer\3d\Main.cpp(148,53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\3d renderer\3d\Main.cpp(150,49): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\3d renderer\3d\Main.cpp(152,50): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   3d.vcxproj -> C:\3d renderer\3d\x64\Debug\3d.exe
